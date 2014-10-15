@@ -12,18 +12,18 @@
 <body>
 	<nav>
 	<ul>
-		<li><a href="about.html">About Us</a></li>
-		<li><a href="">Sponsors</a></li>
-		<li>Events<img src="images/arrow.png"></li>
+		<li><a href="about.html">Մեր Մասին</a></li>
+		<li><a href="staff.html">Հոգաբարձուների Խորհուրդ</a></li>
+		<li>Նախագծեր<img src="images/arrow.png"></li>
 		<ul>
-			<li><a href="">Performance</a></li>
-			<li><a href="">Orchestor +</a></li>
-			<li><a href="">FairyTale Calls</a></li>
+			<li><a href="">Համերգ Ճեմասրահում</a></li>
+			<li><a href="">Օրկեստր +</a></li>
+			<li><a href="">Հեքիաթն է Կանչում </a></li>
 		</ul>
-		<li><a href="staff.html">Staff</a></li>
-		<li><a href="">Concert Tours</a></li>
-		<li><a href="gallery.html">Gallery</a></li>
-		<li><a href="news.php">Pressa</a></li>
+		<li><a href="">Հյուրախաղեր</a></li>
+		<li><a href="gallery.html">Պատկերասրահ</a></li>
+		<li><a href="news.php">Մամուլ</a></li>
+                <li><a href="">Հովանավորներ</a></li>
 	</ul>
 	</nav>
 
@@ -38,15 +38,58 @@
 		<div class="logo">
 			<img src="images/logo.jpg">
 		</div>
-	<div class="slide">
 		<div class="slideshow">
 			<img src="images/slideshow/image1.jpg">
 			<img src="images/slideshow/image2.jpg">
 			<img src="images/slideshow/image3.jpg">
 		</div>
-	</div>
 		<section>
 		</section>
 	</div>	
 </body>
 </html>
+<!-- 
+
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+/*
+Script by FPMC at http://jsarchive.8m.com
+Submitted to JavaScript Kit (http://javascriptkit.com)
+For this and 400+ free scripts, visit http://javascriptkit.com
+*/
+//set image paths
+src = ["images/image1.jpg", "images/image2.jpg", "images/image3.jpg", "images/image4.jpg"]
+
+
+//set corresponding urls
+
+
+//set duration for each image
+duration = 4;
+
+//Please do not edit below
+ads=[]; ct=0;
+function switchAd() {
+var n=(ct+1)%src.length;
+if (ads[n] && (ads[n].complete || ads[n].complete==null)) {
+document["Ad_Image"].src = ads[ct=n].src;
+}
+ads[n=(ct+1)%src.length] = new Image;
+ads[n].src = src[n];
+setTimeout("switchAd()",duration*1000);
+}
+function doLink(){
+location.href = url[ct];
+} onload = function(){
+if (document.images)
+switchAd();
+}
+//-->
+<!-- </SCRIPT>
+
+<A HREF="javascript:doLink();" onMouseOver="status=url[ct];return true;" 
+onMouseOut="status=''">
+<IMG NAME="Ad_Image" SRC="image1.jpg" style="width:60%; height: 400px;">
+</A> -->
