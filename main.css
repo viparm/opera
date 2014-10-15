@@ -153,6 +153,7 @@ nav a:hover {color: #d5b26a;}
 }
 
 .slide {
+	box-shadow:	0 0 10px 2px black;
 	width:		800px;
 	overflow: 	hidden;
 	margin:		40px auto;
